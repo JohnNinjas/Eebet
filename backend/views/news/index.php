@@ -40,5 +40,9 @@ $this->params['breadcrumbs'][] = $this->title;
                 'template' => '{update} {delete}',
             ]
         ],
+		'pager' => [
+        	'firstPageLabel' => 'Первая',
+        	'lastPageLabel' => 'Последняя',
+		]
     ]); ?>
 </div>
