@@ -43,7 +43,7 @@ class NewsController extends BaseController
 		$pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 9, 'forcePageParam' => false, 'pageSizeParam' => false]);
 		$news = $query->offset($pages->offset)
 			->limit($pages->limit)
-			->orderBy(['created_at' => SORT_ASC])
+			->orderBy(['created_at' => SORT_DESC])
 			->all();
 		return $this->render('news_categories', [
 			'pages' => $pages,
@@ -65,7 +65,7 @@ class NewsController extends BaseController
 		$pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 9, 'forcePageParam' => false, 'pageSizeParam' => false]);
 		$news = $query->offset($pages->offset)
 			->limit($pages->limit)
-			->orderBy(['created_at' => SORT_ASC])
+			->orderBy(['created_at' => SORT_DESC])
 			->all();
 		return $this->render('news_category', [
 			'model' => $model,
