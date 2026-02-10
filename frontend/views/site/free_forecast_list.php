@@ -28,9 +28,7 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'Бесплатн�
 
 ?>
 
-
-
-<div class="page">
+<div class="page free-forecasts">
 
 <div class="headeredPage headeredPage_1">
     <div class="headeredPage__title">
@@ -45,9 +43,12 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'Бесплатн�
             <?php foreach ($forecasts as $f) : $wait = $f->GetWaitTime(); ?>
             <div class="itemArticles">
                 <a href="<?=\yii\helpers\Url::to(['site/free-forecast', 'slug' => $f->slug])?>">
-                    <div class="itemArticles__image" style="background-image: url(<?=$f->getThumb()?>)"></div>
+                    <div class="itemArticles__image">
+                        <img src="<?=$f->getThumb()?>" alt="<?=$f->title?>">
+                    </div>
                     <div class="itemArticles__info">
                         <div class="itemArticles__title"><?=$f->title?></div>
+                        <div class="itemArticles__dateMobile"><?=$f->GetDate()?></div>
                         <div class="itemArticles__infoWrap">
                             <div class="articleInfo__date">
                                 <div class="articleInfo__date__icon"></div>

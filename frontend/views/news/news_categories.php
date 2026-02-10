@@ -32,7 +32,7 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'Информац�
 ?>
 
 
-<div class="page">
+<div class="page news">
 
     <div class="headeredPage headeredPage_1">
         <div class="headeredPage__title">

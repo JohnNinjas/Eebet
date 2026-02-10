@@ -38,7 +38,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 
 
-<div class="page">
+<div class="page news-category">
 
     <div class="headeredPage headeredPage_1">
         <div class="headeredPage__title">

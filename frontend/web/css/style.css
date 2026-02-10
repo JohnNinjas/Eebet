@@ -1462,11 +1462,15 @@ img {
 
 .itemArticles__image {
     width: 100%;
-    background-image: url(../img/img1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
     height: 230px;
-    background-size: contain;
+    overflow: hidden;
+}
+
+.itemArticles__image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .itemArticles a {
@@ -1494,6 +1498,10 @@ img {
     line-height: 1.23;
     overflow: hidden;
     font-family: "CirceBold";
+}
+
+.itemArticles__dateMobile {
+    display: none;
 }
 
 
@@ -1635,6 +1643,91 @@ a.btn__yellow_lighter:hover {
 
 .itemArticles__info.vip {
     height: 150px;
+}
+
+@media (max-width: 767px) {
+    .free-forecasts.page .listArticles,
+    .news.page .listArticles {
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .free-forecasts.page .listArticles .itemArticles,
+    .news.page .listArticles .itemArticles {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .free-forecasts.page .listArticles .itemArticles a,
+    .news.page .listArticles .itemArticles a {
+        display: flex;
+        align-items: stretch;
+        min-height: 90px;
+    }
+
+    .free-forecasts.page .listArticles .itemArticles__image,
+    .news.page .listArticles .itemArticles__image {
+        flex: 0 0 90px;
+        max-width: 90px;
+        height: 90px;
+    }
+
+    /* для главной страницы "Информационный блог" картинки задаются через background-image,
+       поэтому отдельно подправляем их отображение на мобилке */
+    .news.page .listArticles .itemArticles__image {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .free-forecasts.page .listArticles .itemArticles__info,
+    .news.page .listArticles .itemArticles__info {
+        flex: 1 1 auto;
+        max-width: none;
+        padding: 6px 10px 6px 12px;
+        height: 90px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .free-forecasts.page .listArticles .itemArticles__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .news.page .listArticles .itemArticles__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        background-color: #000;
+    }
+
+    .free-forecasts.page .listArticles .itemArticles__title,
+    .news.page .listArticles .itemArticles__title {
+        font-size: 14px;
+        line-height: 1.3;
+        height: auto;
+        margin-bottom: 4px;
+    }
+
+    .free-forecasts.page .listArticles .itemArticles__dateMobile,
+    .news.page .listArticles .itemArticles__dateMobile {
+        display: block;
+        font-size: 12px;
+        color: #777;
+        margin-top: 2px;
+    }
+
+    .free-forecasts.page .listArticles .itemArticles__infoWrap,
+    .news.page .listArticles .itemArticles__infoWrap {
+        display: none;
+    }
 }
 
 .mainFooter .sociallinks {
@@ -2299,10 +2392,13 @@ body
 .categoriesList {
     align-items: center;
     margin-bottom: 32px;
-    padding: 10px;
+    padding: 10px 15px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .categoryBlock {
@@ -2335,6 +2431,28 @@ body
     height: 60px;
     font-size: 14px;
     color: #a0a0a0;
+}
+
+.news.page .itemArticles__info {
+    height: auto;
+    padding-bottom: 35px;
+}
+
+.news.page .news-short-desc {
+    height: auto;
+}
+
+.news-category .itemArticles__info {
+    height: auto;
+    padding-bottom: 20px;
+}
+
+/* исправление фоновых картинок в карточках на страницах внутренних категорий блога
+   (например, "Обзоры фильмов"): картинка заполняет блок без повторения */
+.news-category .itemArticles__image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .newsInfo
@@ -2522,6 +2640,22 @@ body
     position:relative;
     left:4px;
     top:1px;
+}
+
+@media (max-width: 767px) {
+    /* мобильная адаптация блока "Понравилась новость?" только на странице одной новости */
+    .news.page .vote-background {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .news.page .vote-text {
+        font-size: 16px;
+    }
+
+    .news.page .vote-buttons {
+        width: 120px;
+    }
 }
 
 

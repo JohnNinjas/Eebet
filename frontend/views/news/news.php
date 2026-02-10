@@ -140,7 +140,7 @@ if ($cookie) {
                    </div>
                </div>
             </div>
-
+            <div class="index-banner-block"><?foreach ($banners as $b) : ?><a href="<?=$b->href?>" target="_blank"><img src="<?=$b->getThumb()?>" /></a><?endforeach;?></div>
         </div>
         <?php if(count($relatedNews) > 0) { ?>
             <div class="contentWrap related-news">

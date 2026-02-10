@@ -36,5 +36,9 @@ $this->params['breadcrumbs'][] = $this->title;
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
+        'pager' => [
+        	'firstPageLabel' => 'Первая',
+        	'lastPageLabel' => 'Последняя',
+		]
     ]); ?>
 </div>
