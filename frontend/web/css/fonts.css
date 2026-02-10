@@ -1,0 +1,50 @@
+@font-face {
+	font-family: "CirceRegular";
+	src: url("../fonts/CirceRounded.eot");
+	src: url("../fonts/CirceRounded.eot?#iefix") format("embedded-opentype"),
+			 url("../fonts/CirceRounded.woff") format("woff"),
+			 url("../fonts/CirceRounded.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "CirceBold";
+	src: url("../fonts/CirceRoundedBold.eot");
+	src: url("../fonts/CirceRoundedBold?#iefix") format("embedded-opentype"),
+			 url("../fonts/CirceRoundedBold.woff") format("woff"),
+			 url("../fonts/CirceRoundedBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "CirceRoundedExtraBold";
+	src: url("../fonts/CirceRoundedExtraBold.eot");
+	src: url("../fonts/CirceRoundedExtraBold?#iefix") format("embedded-opentype"),
+			 url("../fonts/CirceRoundedExtraBold.woff") format("woff"),
+			 url("../fonts/CirceRoundedExtraBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "CirceRoundedLight";
+	src: url("../fonts/CirceRoundedLight.eot");
+	src: url("../fonts/CirceRoundedLight?#iefix") format("embedded-opentype"),
+			 url("../fonts/CirceRoundedLight.woff") format("woff"),
+			 url("../fonts/CirceRoundedLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+@font-face {
+	font-family: "GothamPro";
+	src: url("../fonts/GothamPro.eot");
+	src: url("../fonts/GothamPro?#iefix") format("embedded-opentype"),
+			 url("../fonts/GothamPro.woff") format("woff"),
+			 url("../fonts/GothamPro.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

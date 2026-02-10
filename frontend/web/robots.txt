@@ -1,0 +1,4 @@
+User-agent: *
+Host: https://smolar.ru/
+Sitemap: https://smolar.ru/sitemap.xml
+Disallow: /debug/
