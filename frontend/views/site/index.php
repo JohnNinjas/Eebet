@@ -242,7 +242,7 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'Ставки на
                             </ul>
                         </div>
                         <div class="cardItem__btn">
-                            <a class="btn_usually btn_usually_yellow" href="<?=\yii\helpers\Url::to(['site/vip-forecast-list'])?>">Подробнее</a>
+                            <a class="btn_usually btn_usually_yellow" href="<?=\yii\helpers\Url::to(['site/vip-forecast-list'])?>" target="_blank">Подробнее</a>
                         </div>
                     </div>
 

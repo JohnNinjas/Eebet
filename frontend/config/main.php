@@ -99,7 +99,7 @@ return [
                 'news-category/<slug:[\w\-]+>/page/<page:\d+>' => 'news/news-category',
                 'news-category/<slug:[\w\-]+>' => 'news/news-category',
                 'news/<cat_slug:[\w\-]+>/<slug:[\w\-]+>' => 'news/news',
-                '/vip-bet/' => 'site/vip-forecast-list',
+                '/https://vk.com/market-170572400/' => 'site/vip-forecast-list',
                 'vote/<id:\d+>/<type:\d+>' => 'news/vote',
                 '/vip-bet-photo/<forecast_id:\d+>/<photo:[^\/]+>' => 'photo-secure/vip-forecast-photo',
                 '/free-bet-photo/<forecast_id:\d+>/<photo:[^\/]+>' => 'photo-secure/free-forecast-photo',

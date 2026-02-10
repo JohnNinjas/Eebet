@@ -53,7 +53,7 @@ $action = \Yii::$app->controller->action->id;
     <div class="headerMenu">
         <ul>
             <li><a href="<?=\yii\helpers\Url::to(['site/free-forecast-list'])?>">Бесплатные прогнозы</a></li>
-            <li><a href="<?=\yii\helpers\Url::to(['site/vip-forecast-list'])?>">VIP прогнозы</a></li>
+            <li><a href="<?=\yii\helpers\Url::to(['site/vip-forecast-list'])?>" target="_blank">VIP прогнозы</a></li>
             <li><a href="<?=\yii\helpers\Url::to(['news/news-all-cats'])?>">Информационный блог</a></li>
             <li><a href="<?=\yii\helpers\Url::to(['site/promotion'])?>">Раскрутка счета</a></li>
         </ul>
