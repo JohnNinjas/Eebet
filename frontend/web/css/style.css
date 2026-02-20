@@ -1663,28 +1663,25 @@ a.btn__yellow_lighter:hover {
     .free-forecasts.page .listArticles .itemArticles a {
         display: flex;
         align-items: stretch;
-        min-height: 110px;
+        min-height: 100px;
     }
 
     .news.page .listArticles .itemArticles a {
         display: flex;
         align-items: stretch;
-        min-height: 90px;
+        min-height: 100px;
     }
 
     .free-forecasts.page .listArticles .itemArticles__image {
-        flex: 0 0 110px;
-        max-width: 110px;
-        height: 110px;
+        flex: 0 0 140px;
+        max-width: 140px;
+        height: 100px;
     }
 
     .news.page .listArticles .itemArticles__image {
-        flex: 0 0 90px;
-        max-width: 90px;
-        height: 90px;
-    }
-
-    .news.page .listArticles .itemArticles__image {
+        flex: 0 0 140px;
+        max-width: 140px;
+        height: 100px;
         background-size: cover;
         background-position: center;
     }
@@ -1693,7 +1690,7 @@ a.btn__yellow_lighter:hover {
         flex: 1 1 auto;
         max-width: none;
         padding: 6px 10px 6px 12px;
-        height: 110px;
+        height: 100px;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
@@ -1706,7 +1703,7 @@ a.btn__yellow_lighter:hover {
         flex: 1 1 auto;
         max-width: none;
         padding: 6px 10px 6px 12px;
-        height: 90px;
+        height: 100px;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
@@ -1770,13 +1767,13 @@ a.btn__yellow_lighter:hover {
     .news.page .contentWrap.related-news .itemNews a {
         display: flex;
         align-items: stretch;
-        min-height: 90px;
+        min-height: 100px;
     }
 
     .news.page .contentWrap.related-news .itemNews__image {
-        flex: 0 0 90px;
-        max-width: 90px;
-        height: 90px;
+        flex: 0 0 140px;
+        max-width: 140px;
+        height: 100px;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1786,7 +1783,7 @@ a.btn__yellow_lighter:hover {
         flex: 1 1 auto;
         max-width: none;
         padding: 6px 10px 6px 12px;
-        height: 90px;
+        height: 100px;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
